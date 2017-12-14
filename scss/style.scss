@@ -1,0 +1,115 @@
+$asphalt:#34495e;
+$clouds:#ecf0f1;
+$midnight:#2c3e50;
+$concrete:#95a5a6;
+$blue:#3498db;
+$darkblue:#2980b9;
+$red:#e74c3c;
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: $asphalt;
+    font-family: Roboto;
+}
+header {
+    display: flex;
+
+    .logo {
+        font-size: 20px;
+        color: $asphalt;
+        width: 30%;
+        h1 {
+            margin-left: 50px;
+        }
+
+    }
+    .navigation {
+        width: 70%;
+        position: relative;
+        ul {
+            position: absolute;
+            right:20px;
+            top: 12px;
+            list-style-type: none;
+            line-height: 20px;
+            
+            li {
+                display: inline-block;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    color: $darkblue;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    padding: 5px;
+                    transition: all ease-in-out 0.2s;
+                    &:hover {
+                        color: $clouds;
+                        background: $darkblue;
+                    }
+                }
+            }
+        }
+    }
+}
+.lading_area {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    & > div {
+        width: 50%;
+    }
+    .headline {
+       background: $clouds;
+       border-radius: 5px;
+       box-shadow: 0px 5px 15px black;
+       margin: 10px;
+       padding: 20px;
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            color:$blue;
+        }
+        p {
+            text-align: justify;
+            text-indent: 15px;
+            line-height: 1.5;
+        }
+        .newsletter_box {
+            text-align: center;
+            input {
+                height: 30px;
+                padding: 5px;
+            }
+            button {
+                height: 43px;
+                background: $red;
+                color: $clouds;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                
+            }
+        }
+    }
+    .judo_image {
+        img {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/***color classes***/
+.darkblue {
+    color: $darkblue;
+}

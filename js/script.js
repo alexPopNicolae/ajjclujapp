@@ -1,0 +1,1 @@
+console.log("Totul merge cum trebuie");
